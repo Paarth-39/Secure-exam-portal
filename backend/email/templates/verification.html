@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Your Email - SecureExam</title>
+  <style>
+    body {
+      background-color: #F8FAFC;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background-color: #FFFFFF;
+      padding: 32px;
+      border-radius: 12px;
+      border: 1px solid #E5E7EB;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+    .header {
+      font-size: 24px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .content {
+      font-size: 16px;
+      color: #6B7280;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .cta-container {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .cta-button {
+      background-color: #4F46E5;
+      color: #FFFFFF !important;
+      padding: 14px 28px;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    .footer {
+      font-size: 13px;
+      color: #9CA3AF;
+      border-top: 1px solid #E5E7EB;
+      padding-top: 16px;
+      text-align: center;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Verify Your Email Address</div>
+    <div class="content">
+      Hello {{FULL_NAME}},<br><br>
+      Thank you for creating an account with SecureExam. Please click the button below to verify your email address and activate your account.
+    </div>
+    <div class="cta-container">
+      <a href="{{FRONTEND_URL}}/verify-email?token={{TOKEN}}" class="cta-button" target="_blank">Verify My Email</a>
+    </div>
+    <div class="content" style="font-size: 14px; text-align: center;">
+      This link expires in 24 hours.
+    </div>
+    <div class="footer">
+      If you didn't create this account, you can safely ignore this email.<br>
+      &copy; 2026 SecureExam System. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>

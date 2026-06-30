@@ -1,0 +1,120 @@
+# ======================
+# Dependencies
+# ======================
+node_modules/
+**/node_modules/
+
+# ======================
+# Environment files
+# ======================
+.env
+.env.*
+!.env.example
+
+# ======================
+# Logs
+# ======================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ======================
+# Build folders
+# ======================
+dist/
+build/
+out/
+coverage/
+
+# Frontend build
+frontend/dist/
+
+# Backend build
+backend/build/
+
+# Matching engine build
+matching-engine/build/
+matching-engine/bin/
+matching-engine/*.exe
+matching-engine/*.out
+
+# ======================
+# Database
+# ======================
+database/data/
+database/postgres-data/
+*.sqlite
+*.db
+
+# ======================
+# IDE files
+# ======================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Cache
+# ======================
+.cache/
+.parcel-cache/
+.eslintcache
+
+# ======================
+# Temporary files
+# ======================
+tmp/
+temp/
+
+# ======================
+# TypeScript
+# ======================
+*.tsbuildinfo
+
+# ======================
+# Package lock files (optional)
+# Uncomment if you don't want to track them
+# ======================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ======================
+# Docker
+# ======================
+docker-compose.override.yml
+*.pid
+
+# ======================
+# Prisma
+# ======================
+backend/prisma/migrations/
+# Uncomment above line only if you don't want migrations in git
+
+# ======================
+# Uploads
+# ======================
+backend/uploads/
+backend/public/uploads/
+
+# ======================
+# Testing
+# ======================
+coverage/
+.nyc_output/
+
+# ======================
+# Misc
+# ======================
+*.bak
+*.tmp

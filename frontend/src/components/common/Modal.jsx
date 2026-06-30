@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 
+
 export default function Modal({ isOpen, onClose, title, children }) {
   // Listen for Escape key to close the modal
   useEffect(() => {

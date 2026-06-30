@@ -9,12 +9,13 @@ export default function Badge({ children, variant = 'default', className = '' })
     success: 'bg-emerald-100 text-success border border-transparent',
     warning: 'bg-amber-100 text-warning border border-transparent',
     danger: 'bg-red-100 text-danger border border-transparent'
+
   };
 
   const selectedVariant = variants[variant] || variants.default;
 
   return (
-    <span className={`${baseStyle} ${selectedVariant} ${className}`}>
+    <span className = {`${baseStyle} ${selectedVariant} ${className}`}>
       {children}
     </span>
   );

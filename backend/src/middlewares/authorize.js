@@ -1,5 +1,6 @@
 const AppError = require('../utils/AppError');
 
+
 /**
  * Authorization middleware by role.
  * @param {...string} roles - Array of user roles

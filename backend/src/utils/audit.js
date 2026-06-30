@@ -6,7 +6,7 @@ const { prisma } = require('../config/db');
  * @param {string} action - The action string
  * @param {object} req - Express Request object
  */
-async function auditLog(userId, action, req) {
+const auditLog = async (userId, action, req) =>  {
   try {
     const ipAddress = req.ip || req.headers['x-forwarded-for'] || 'unknown';
     const device = req.headers['user-agent'] || 'unknown';

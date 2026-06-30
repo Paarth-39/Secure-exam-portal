@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
+
 export default function EmptyState({
   icon = '📝',
   title = 'No Data Found',
